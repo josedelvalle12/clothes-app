@@ -1,0 +1,58 @@
+/* Estiliza el contenedor del calendario */
+
+.calendar-container {
+  width: 100%;
+  height: 370px;
+  padding: 16px 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-calendar {
+    max-width: 100%;
+    background-color: white;
+    border: 1px solid #DBE0E5;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  /* Cambiar color de selección sin retraso */
+.react-calendar__tile:enabled:hover, 
+.react-calendar__tile:enabled:focus {
+  background-color: #007bff !important;
+}
+  
+  /* Cambia el color de fondo de los días seleccionados */
+  .react-calendar__tile--active {
+    background: #007bff !important;
+    color: white !important;
+    border-radius: 50%;
+    transition: none !important;
+  }
+  
+  /* Cambia el color cuando pasas el mouse sobre un día */
+  .react-calendar__tile:hover {
+    background: #0056b3;
+    color: white;
+    border-radius: 100%;
+  }
+  
+  /* Cambia el estilo de los botones de navegación */
+  .react-calendar__navigation button {
+    color: #007bff;
+    font-size: 18px;
+  }
+
+  /* Cambia el estilo de los días del mes */
+  .react-calendar__month-view__days__day {
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  /* Cambia el color del texto de los días no pertenecientes al mes actual */
+  .react-calendar__month-view__days__day--neighboringMonth {
+    color: #969696;
+  }
