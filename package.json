@@ -2,7 +2,7 @@
   "name": "clothes-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://josedelvalle12.github.io/clothes-app",
+  "homepage": "https://josedelvalle12.github.io/clothes-app/",
   "dependencies": {
     "@auth0/auth0-react": "^2.2.4",
     "@emotion/react": "^11.11.1",
