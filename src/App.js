@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar'
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter, BrowserRouter as Router } from 'react-router-dom';
 import AnimatedRoutes from './components/AnimatedRoutes';
 import { ServicesProvider } from './components/ServicesContext.jsx'
 import Login from './pages/Login.jsx';
@@ -13,6 +13,8 @@ function App() {
 
   return (
     <div className="App">
+    <HashRouter>
+
     <Router>
     {/* <Login></Login> */}
     {/* <LoginButton></LoginButton> */}
@@ -21,6 +23,7 @@ function App() {
       <AnimatedRoutes></AnimatedRoutes>
     </ServicesProvider>
     </Router>
+    </HashRouter>
     </div>
   );
 }
